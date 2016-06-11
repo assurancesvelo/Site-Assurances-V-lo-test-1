@@ -1,0 +1,143 @@
+
+
+#header_video video {
+    height: 720px;
+    overflow: hidden;
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif; 
+}
+
+h1{
+	font-size:50px;
+}
+
+h2{
+	font-size:18px;
+}
+
+
+#header {
+	padding: 16em 0em;
+	color: white;
+	position: absolute;
+	top: 0px;
+	width:100%;
+	text-align: center;
+
+}
+
+
+#header a:hover{
+	text-decoration: none;
+	color: black;
+	opacity: 0.5;
+}
+
+#headrer, a{
+	color:#fe7600;
+}
+
+#devis{
+
+	
+	position: absolute;
+	top: 658px;
+	width: 100%;
+	padding: 1em;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+#garanties {
+	padding-top: 5em;
+	padding-bottom: 5em;
+	text-align: center;
+	position: relative;
+
+}
+
+#partenaires{
+	background-color: #232323;
+	color: white;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	text-align: center;
+
+}
+
+#marques{
+	text-align: center;
+	padding:1em;
+}
+
+#client{
+	background-color: #232323;
+	color: white;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 10em;
+	padding-right: 10em;
+	text-align: center;
+
+}
+
+#social{
+	font-size: 60px;
+	background-color: #e6e6e6;
+	text-align: center;
+}
+
+#social a{
+	color : #232323;
+}
+
+
+
+#sponsor{
+	background-image:url(../images/quentin2.jpg);
+	height: 40em;
+	background-size: cover;
+}
+
+.btn-orange{
+	background-color: #fe7600;
+	color:white;
+	padding: 10px 20px ;
+	border-radius: 2px;
+	position: absolute,
+	height: 29px;
+}
+
+.btn-orange:hover {
+	color: white;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+
+
+#decalage_haut{
+	padding-top:2em;	
+}
+
+.presse{
+	height: 100px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+.image-ronde{
+	border-radius: 50%;
+	width: 60px;
+	border: 1px solid #fe7600;
+
+}
+
+.color_grey{
+	background-color: #e6e6e6;
+}
