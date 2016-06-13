@@ -94,11 +94,10 @@ h2{
 }
 
 
-
-#sponsor{
-	background-image:url(../images/quentin2.jpg);
-	height: 40em;
-	background-size: cover;
+#sponsor img{
+	max-width: 100%;
+    height: auto;
+    
 }
 
 .btn-orange{
