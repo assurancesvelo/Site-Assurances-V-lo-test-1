@@ -1,8 +1,8 @@
 
 
 #header_video video {
-    height: 720px;
     overflow: hidden;
+    width: 100%;
 }
 
 
