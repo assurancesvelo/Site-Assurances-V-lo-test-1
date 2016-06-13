@@ -18,6 +18,10 @@ h2{
 	font-size:18px;
 }
 
+p {
+	font-size: 16px;
+}
+
 
 #header {
 	padding: 16em 0em;
@@ -80,7 +84,10 @@ h2{
 	padding-left: 10em;
 	padding-right: 10em;
 	text-align: center;
+}
 
+#client p{
+	font-size: 20px;
 }
 
 #social{
@@ -119,6 +126,11 @@ h2{
 
 #decalage_haut{
 	padding-top:2em;	
+}
+
+#titre_presse {
+	text-align: center;
+	padding-top: 1em;
 }
 
 .presse{
