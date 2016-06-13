@@ -43,12 +43,10 @@ h2{
 #devis{
 
 	
-	position: absolute;
 	top: 658px;
 	width: 100%;
-	padding: 1em;
+	padding: 3em;
 	text-align: center;
-	background-color: rgba(0,0,0,0.5);
 
 }
 
