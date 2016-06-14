@@ -65,12 +65,13 @@
 		
 
 		<div id="devis">
-			<form action="" class="form-inline">
 
-				<input type="email" class="form-control"  placeholder="Votre E-mail">
-				<input type="text" class="form-control" placeholder="Prix du vélo">
+			<form action="" class="form-inline" method="POST" action="reponse.php">
+				<input type="email" name="email_client"	class="form-control"  placeholder="Votre E-mail">
+				<input type="text" name="prix_velo"	class="form-control" placeholder="Prix du vélo">
 				<input type="submit" value="Obtenir mon devis" class="btn btn-warning btn-color">
 			</form>	
+
 		</div>
 
 		<!-- Button Modal -->
@@ -79,7 +80,6 @@
 		</button>
 
 	</div>
-
 
 
 	<!-- Modal -->
