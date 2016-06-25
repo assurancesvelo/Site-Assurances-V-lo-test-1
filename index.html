@@ -1,184 +1,217 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Assurez  vos vélos</title>
+        <title>Assurez  vos vélos</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://use.fontawesome.com/c3d7ad2f02.js"></script>
-
-
-	<!-- Smooth Scroll -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-				var page = $(this).attr('href'); // Page cible
-				var speed = 750; // Durée de l'animation (en ms)
-				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-				return false;
-			});
-		});
-	</script>
-	<!-- /Smooth Scroll -->
-
-</head>
-
-<body>
-
-	<nav class="navbar navbar-light bg-faded navbar-fixed-top navbar-transparent">
-		<ul class="nav navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link js-scrollTo" href="#garanties"">Voir le produit<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link js-scrollTo" href="#partenaires">Partenaires</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link js-scrollTo" href="#titre_presse">Presse</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="https://www.facebook.com/assurancevelo/?fref=ts" target="_blank">Facebook</a>
-			</li>
-		</ul>
-	</nav>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://use.fontawesome.com/c3d7ad2f02.js"></script>
 
 
-	<div id="header_video">
-		<video src="videos/greg.mp4" autoplay muted loop></video>
-	</div>
+        <!-- Smooth Scroll -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 750; // Durée de l'animation (en ms)
+                    $('html, body').animate({scrollTop: $(page).offset().top}, speed); // Go
+                    return false;
+                });
+            });
+        </script>
+        <!-- /Smooth Scroll -->
 
-	<div id="header">
+    </head>
 
-		<h1>Ne pensez plus qu'à rouler</h1>
-		<h2>On assure votre vélo en tous lieux et sans vétusté. En cas de sinsitre on s'occupe de tout</h2>
-		<p style="font-size:20px">Assurance à partir de 5€ / mois</p>
-		<p></p>
-		
+    <body>
 
-		<div id="devis">
-
-			<form action="reponse.php" class="form-inline" method="post">
-				<input type="email" name="email_client"	class="form-control"  placeholder="Votre E-mail">
-				<input type="text" name="prix_velo"	class="form-control" placeholder="Prix du vélo">
-				<input type="submit" value="Obtenir mon devis" class="btn btn-warning btn-color">
-			</form>	
-
-		</div>
-
-		<!-- Button Modal -->
-		<button type="button" class="btn bouton_video" data-toggle="modal" data-target="#myModal">
-			Regarder la vidéo de présentation
-		</button>
-
-	</div>
-
-
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-		<div class="modal-dialog modal-lg"" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Vidéo de présentation</h4>
-				</div>
-				<div class="modal-body">
-					<iframe src="https://player.vimeo.com/video/169866981" width="832" height="468" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="garanties">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<img src="images/formulaire.png" alt="Garanties" class="image-ronde">
-					<h3>Garanties</h3>
-					<p>Plafond d'assurance à partir de 1000€<br>Garantie équipements 600€</p>
-				</div>
-				<div class="col-sm-4">
-					<img src="images/pricing.png" alt="Prix" class="image-ronde">
-					<h3>Prix</h3>
-					<p>Offre d'assurance classique <br> à partir de 5,75€/mois</p>
-				</div>
-				<div class="col-sm-4">
-					<img src="images/tool.png" alt="Sinistres" class="image-ronde">
-					<h3>Sinistres</h3>
-					<p>Nous gérons toutes les démarches à votre place<br>Grace à notre réseau de partenaires</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div></div>
-
-	<div id="partenaires">
-
-		<h3> <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i> + de 100 magasins et agences d'assurances partenaires</h3>
-	</div>
+        <nav class="navbar navbar-light bg-faded navbar-fixed-top navbar-transparent">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link js-scrollTo" href="#garanties"">Voir le produit<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scrollTo" href="#partenaires">Partenaires</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scrollTo" href="#titre_presse">Presse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/assurancevelo/?fref=ts" target="_blank">Facebook</a>
+                </li>
+            </ul>
+        </nav>
 
 
-	<div id="marques">
-		<h3>Marques partenaires</h3>
-		<p>Nous travaillons avec les meilleures marques du cyclisme</p>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3"><img src="images/asterion.png" alt="Astérion"></div>
-				<div class="col-sm-3"><img src="images/occabike.png" alt="Occabike"></div>
-				<div class="col-sm-3"><img src="images/cycling_heroes.png" alt="Cycling Heroes"></div>
-				<div class="col-sm-3"><img src="images/logo-helpmybike.png" alt="Help My Bike"></div>
-			</div>
-		</div>
-	</div>
+        <div id="header_video">
+            <video src="videos/greg.mp4" autoplay muted loop></video>
+        </div>
 
-	<div id="client">
-		<h4>Je suis très satisfait de la gestion de mon sinistre par l'équipe des assurances vélo. Aucune gestion ni prise de tête </h4>
-		<p>Claude</p>
-	</div>
+        <div id="header">
 
-	<div id="titre_presse">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-2"><img src="images/CycloSport.jpg" alt="" class="presse"></div>
-				<div class="col-sm-2"><img src="images/soul.jpg" alt="" class="presse"></div>
-				<div class="col-sm-2"><img src="images/top_velo.jpg" alt="" class="presse"></div>
-				<div class="col-sm-2"><img src="images/vojo.jpeg" alt="" class="presse"></div>
-				<div class="col-sm-2"><img src="images/velo_tout_terrain.jpg" alt="" class="presse"></div>
-				<div class="col-sm-2"><img src="images/vtt_mag.jpg" alt="" class="presse"></div>
+            <h1>Ne pensez plus qu'à rouler</h1>
+            <h2>On assure votre vélo en tous lieux et sans vétusté. En cas de sinsitre on s'occupe de tout</h2>
+            <p style="font-size:20px">Assurance à partir de 5€ / mois</p>
+            <p></p>
 
-			</div>
-		</div>
-	</div>
 
-	<div id="sponsor">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12"><img src="images/quentin2.jpg" alt="#"></div>
-			</div>
-		</div>
-	</div>
+            <div id="devis">
 
-	<div id="social">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4"><a href="https://www.facebook.com/assurancevelo/?fref=ts"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
-				<div class="col-sm-4"><a href="https://twitter.com/assurancesvelo"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
-				<div class="col-sm-4"><a href="https://www.instagram.com/assurances.velo/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-			</div>
-		</div>
-	</div>
+                <form action="form.php" class="form-inline" id='home_form' method="post">
+                    <input type="email" name="email_client"	id='email_client' class="form-control"  placeholder="Votre E-mail">
+                    <input type="text" name="prix_velo" id='prix_velo' class="form-control" placeholder="Prix du vélo">
+                    <input type="submit" value="Obtenir mon devis" class="btn btn-warning btn-color">
+                </form>	
 
-	<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
-</body>
+                <div id='merci'>
+                    <p>Merci !</p>
+                </div>
+
+            </div>
+
+            <!-- Button Modal -->
+            <button type="button" class="btn bouton_video" data-toggle="modal" data-target="#myModal">
+                Regarder la vidéo de présentation
+            </button>
+
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg"" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Vidéo de présentation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://player.vimeo.com/video/169866981" width="832" height="468" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="garanties">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/formulaire.png" alt="Garanties" class="image-ronde">
+                        <h3>Garanties</h3>
+                        <p>Plafond d'assurance à partir de 1000€<br>Garantie équipements 600€</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/pricing.png" alt="Prix" class="image-ronde">
+                        <h3>Prix</h3>
+                        <p>Offre d'assurance classique <br> à partir de 5,75€/mois</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/tool.png" alt="Sinistres" class="image-ronde">
+                        <h3>Sinistres</h3>
+                        <p>Nous gérons toutes les démarches à votre place<br>Grace à notre réseau de partenaires</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div></div>
+
+        <div id="partenaires">
+
+            <h3> <i class="fa fa-thumbs-o-up" aria-hidden="true" style="font-size:30px"></i> + de 100 magasins et agences d'assurances partenaires</h3>
+        </div>
+
+
+        <div id="marques">
+            <h3>Marques partenaires</h3>
+            <p>Nous travaillons avec les meilleures marques du cyclisme</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"><img src="images/asterion.png" alt="Astérion"></div>
+                    <div class="col-sm-3"><img src="images/occabike.png" alt="Occabike"></div>
+                    <div class="col-sm-3"><img src="images/cycling_heroes.png" alt="Cycling Heroes"></div>
+                    <div class="col-sm-3"><img src="images/logo-helpmybike.png" alt="Help My Bike"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="client">
+            <h4>Je suis très satisfait de la gestion de mon sinistre par l'équipe des assurances vélo. Aucune gestion ni prise de tête </h4>
+            <p>Claude</p>
+        </div>
+
+        <div id="titre_presse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"><img src="images/CycloSport.jpg" alt="" class="presse"></div>
+                    <div class="col-sm-2"><img src="images/soul.jpg" alt="" class="presse"></div>
+                    <div class="col-sm-2"><img src="images/top_velo.jpg" alt="" class="presse"></div>
+                    <div class="col-sm-2"><img src="images/vojo.jpeg" alt="" class="presse"></div>
+                    <div class="col-sm-2"><img src="images/velo_tout_terrain.jpg" alt="" class="presse"></div>
+                    <div class="col-sm-2"><img src="images/vtt_mag.jpg" alt="" class="presse"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="sponsor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12"><img src="images/quentin2.jpg" alt="#"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"><a href="https://www.facebook.com/assurancevelo/?fref=ts"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                    <div class="col-sm-4"><a href="https://twitter.com/assurancesvelo"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
+                    <div class="col-sm-4"><a href="https://www.instagram.com/assurances.velo/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
+
+
+        <!-- FORM -->
+
+        <script type="text/javascript">
+
+            $("#merci").hide();
+
+            $("document").ready(function () {
+                $("#home_form").submit(function () {
+                    var data = {
+                        "action": "new_custommer"
+                    };
+                    data = $(this).serialize() + "&" + $.param(data);
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: "form_1.php",
+                        data: data,
+                        success: function (data) {
+                            $("#home_form").hide();
+                            $("#merci").fadeIn("fast");
+                        }
+
+                    });
+                    return false;
+                });
+            });
+        </script>
+    </body>
 </html>
